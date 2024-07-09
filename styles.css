@@ -14,14 +14,16 @@ div[class="quarto-title column-page"]{
 }
 
 /* add text outline */
+/* transparent slightly */
 
 h1[class='title']
 {
     font-size: 100px;
     color: white;
-    text-shadow: -10px 0 black, 0 10px black, 10px 0 black, 0 -10px black;
-
+    /* text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black; */
+    text-shadow: -12px 0 rgb(64, 64, 64), 0 12px rgb(64, 64, 64), 12px 0 rgb(64, 64, 64), 0 -12px rgb(64, 64, 64);
 }
+
 
 /* change default text colour */
 
