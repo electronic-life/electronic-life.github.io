@@ -1,58 +1,92 @@
 /* css styles */
-
-/* make taller */
-
-div[class="quarto-title-banner page-columns page-full"]{
-    height: 400px;
+div[class="quarto-title-banner page-columns page-full"] {
+    min-height: 400px;
+    height: auto;
 }
 
-/* center vertically */
-
-div[class="quarto-title column-page"]{
+div[class="quarto-title column-page"] {
     display: flex;
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-/* make text size responsive */
-
-h1[class='title']
-{
-    font-size: 6.5em;
+h1[class='title'] {
+    font-size: 6.5vw;
     color: white;
-    text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
+    text-shadow: 
+        -0.115em 0 black, 
+        0 0.115em black, 
+        0.115em 0 black, 
+        0 -0.115em black;
+    text-align: left;
+    max-width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
+    margin-left: 20px;
 }
 
-
-
-span
-{
+span {
     color: white;
 }
 
-/* span hover */
-
-span:hover
-{
+span:hover {
     color: black;
     background-color: gold;
 }
 
-p{
+p {
     color: white;
 }
 
-/* new line for this*/
-p[class="subtitle lead"]{
+/* Adaptive subtitle styling */
+p[class="subtitle lead"] {
     color: white;
-    font-size: 1.5em;
-    /* new line */
-    margin-top: 180px;
-    /* move left */
-    margin-left: -705px;
+    font-size: 2.5vw; /* Adaptive font size */
+    margin-top: 20px;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 20px;
 }
 
-p[class="subtitle lead"]:hover{
+p[class="subtitle lead"]:hover {
     color: black;
     background-color: gold;
-    text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
+    text-shadow: 
+        -0.5em 0.24em black, 
+        0.1em 0.75em black, 
+        0.6em -0.1em black, 
+        0.70em -0.3em black;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    h1[class='title'] {
+        font-size: 8vw;
+    }
+    
+    p[class="subtitle lead"] {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    h1[class='title'] {
+        font-size: 10vw;
+    }
+    
+    p[class="subtitle lead"] {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1[class='title'] {
+        font-size: 12vw;
+    }
+    
+    p[class="subtitle lead"] {
+        font-size: 5vw;
+    }
 }
