@@ -35,18 +35,52 @@ h1[class='title']:hover{
         0 -0.1125em gold;
 }
 
-span {
+span[class='menu-text']{
     color: white;
 }
 
-span:hover {
+span[class='menu-text']:hover {
     color: black;
     background-color: gold;
+}
+
+span[class="navbar-title"]{
+    color: white;
+    text-shadow: 
+        -0.1125em 0 black, 
+        0 0.1125em black, 
+        0.1125em 0 black, 
+        0 -0.1125em black;
+}
+
+h1[class='title']:hover{
+    color: black;
+    text-shadow: 
+        -0.1125em 0 gold, 
+        0 0.1125em gold, 
+        0.1125em 0 gold, 
+        0 -0.1125em gold;
 }
 
 p {
     color: white;
 }
+
+
+/* @font-face {
+    font-family: 'excelsior';
+    font-weight: 100;
+    font-style: normal;
+    src: url("fonts/font.ttf") format('truetype');
+  }
+
+@font-face {
+font-family: 'doves';
+font-weight: 100;
+font-style: normal;
+src: url("fonts/doves.ttf") format('truetype');
+} */
+
 
 /* Adaptive subtitle styling */
 p[class="subtitle lead"] {
@@ -58,7 +92,6 @@ p[class="subtitle lead"] {
         0.1em 0 black, 
         0 -0.1em black;
     margin-left: 20px; 
-
 }
 
 
