@@ -24,14 +24,6 @@ h1[class='title']
     text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
 }
 
-h1[class='title']:hover{
-    color: black;
-    background-color: gold;
-    text-shadow: 0 0 rgb(64, 64, 64), 0 0 rgb(64, 64, 64), 0 0 rgb(64, 64, 64), 0 0px rgb(64, 64, 64);
-}
-
-/* change default text colour */
-
 span
 {
     color: white;
