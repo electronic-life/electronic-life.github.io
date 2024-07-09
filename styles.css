@@ -13,16 +13,16 @@ div[class="quarto-title column-page"]{
     align-items: center; 
 }
 
-/* add text outline */
-/* transparent slightly */
+/* make text size responsive */
 
 h1[class='title']
 {
-    font-size: 100px;
+    font-size: 6em;
     color: white;
-    /* text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black; */
     text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
 }
+
+
 
 span
 {
@@ -39,4 +39,20 @@ span:hover
 
 p{
     color: white;
+}
+
+/* new line for this*/
+p[class="subtitle lead"]{
+    color: white;
+    font-size: 1.5em;
+    /* new line */
+    margin-top: 160px;
+    /* move left */
+    margin-left: -650px;
+}
+
+p[class="subtitle lead"]:hover{
+    color: black;
+    background-color: gold;
+    text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
 }
