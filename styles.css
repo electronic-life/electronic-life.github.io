@@ -1,1 +1,43 @@
 /* css styles */
+
+/* make taller */
+
+div[class="quarto-title-banner page-columns page-full"]{
+    height: 400px;
+}
+
+/* center vertically */
+
+div[class="quarto-title column-page"]{
+    display: flex;
+    align-items: center; 
+}
+
+/* add text outline */
+
+h1[class='title']
+{
+    font-size: 100px;
+    color: white;
+    text-shadow: -10px 0 black, 0 10px black, 10px 0 black, 0 -10px black;
+
+}
+
+/* change default text colour */
+
+span
+{
+    color: white;
+}
+
+/* span hover */
+
+span:hover
+{
+    color: black;
+    background-color: gold;
+}
+
+p{
+    color: white;
+}
