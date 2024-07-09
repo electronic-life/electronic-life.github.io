@@ -16,14 +16,23 @@ h1[class='title'] {
     font-size: 6.5vw;
     color: white;
     text-shadow: 
-        -0.115em 0 black, 
-        0 0.115em black, 
-        0.115em 0 black, 
-        0 -0.115em black;
+        -0.1125em 0 black, 
+        0 0.1125em black, 
+        0.1125em 0 black, 
+        0 -0.1125em black;
     text-align: left;
     max-width: 100%;
     hyphens: auto;
     margin-left: 20px;
+}
+
+h1[class='title']:hover{
+    color: black;
+    text-shadow: 
+        -0.1125em 0 gold, 
+        0 0.1125em gold, 
+        0.1125em 0 gold, 
+        0 -0.1125em gold;
 }
 
 span {
@@ -43,21 +52,15 @@ p {
 p[class="subtitle lead"] {
     color: white;
     font-size: 2.5vw; /* Adaptive font size */
-    margin-top: 20px;
-    text-align: left;
-    max-width: 100%;
-    margin-left: 20px;
+    text-shadow: 
+        -0.1em 0 black, 
+        0 0.1em black, 
+        0.1em 0 black, 
+        0 -0.1em black;
+    margin-left: 20px; 
+
 }
 
-p[class="subtitle lead"]:hover {
-    color: black;
-    background-color: gold;
-    text-shadow: 
-        -0.5em 0.24em black, 
-        0.1em 0.75em black, 
-        0.6em -0.1em black, 
-        0.70em -0.3em black;
-}
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
@@ -88,4 +91,10 @@ p[class="subtitle lead"]:hover {
     p[class="subtitle lead"] {
         font-size: 5vw;
     } */
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

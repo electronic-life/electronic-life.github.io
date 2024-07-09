@@ -106,8 +106,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#electronic-life" id="toc-electronic-life" class="nav-link active" data-scroll-target="#electronic-life">Electronic Life</a></li>
+  <li><a href="#bare-thoughts" id="toc-bare-thoughts" class="nav-link" data-scroll-target="#bare-thoughts">Bare Thoughts</a></li>
+  <li><a href="#rage-machine" id="toc-rage-machine" class="nav-link" data-scroll-target="#rage-machine">Rage Machine</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -131,9 +139,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These are our projects</p>
+<section id="electronic-life" class="level1">
+<h1>Electronic Life</h1>
+</section>
+<section id="bare-thoughts" class="level1">
+<h1>Bare Thoughts</h1>
+</section>
+<section id="rage-machine" class="level1">
+<h1>Rage Machine</h1>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -228,7 +244,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/electronic-life\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
