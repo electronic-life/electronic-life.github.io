@@ -17,7 +17,7 @@ div[class="quarto-title column-page"]{
 
 h1[class='title']
 {
-    font-size: 6em;
+    font-size: 6.5em;
     color: white;
     text-shadow: -12px 0 black, 0 12px black, 12px 0 black, 0 -12px black;
 }
@@ -46,9 +46,9 @@ p[class="subtitle lead"]{
     color: white;
     font-size: 1.5em;
     /* new line */
-    margin-top: 160px;
+    margin-top: 180px;
     /* move left */
-    margin-left: -650px;
+    margin-left: -705px;
 }
 
 p[class="subtitle lead"]:hover{
