@@ -3,7 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: splash
-title: ""
+title: "Electronic Life"
+subtitle: "AI Studio"
 header:
 #   overlay_color: "#000"
   overlay_filter: "0.2"

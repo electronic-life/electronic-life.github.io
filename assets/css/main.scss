@@ -1,6 +1,15 @@
 ---
 ---
 
+$background-color: black;
+$link-color: gold;
+$body-color: white;
+$intro-transition  : none;
+$global-transition : none;
+$muted-text-color: grey;
+$footer-background-color: black;
+$footer-text-color: white;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -17,4 +26,34 @@
       0 0.1em black,
       0.1em 0 black,
       0 -0.1em black !important;
+}
+
+.masthead {
+  height: 55px; // Adjust this value as needed
+
+  &__inner-wrap {
+    padding: 0.25em; // Reduce padding
+  }
+}
+
+.page__footer {
+  margin-top: 1em; // Reduced top margin
+
+  footer {
+    margin-top: 0.5em; // Reduced top margin
+    padding: 0.5em 1em; // Reduced padding
+  }
+}
+
+.greedy-nav {
+  .visible-links {
+    a {
+      &:before {
+        height: 0 !important; // This removes the underline
+      }
+      &:hover {
+        text-decoration: none; // This ensures no underline on hover
+      }
+    }
+  }
 }

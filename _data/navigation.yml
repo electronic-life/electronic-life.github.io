@@ -1,0 +1,7 @@
+main:
+  - title: "Studio"
+    url: /studio/
+  - title: "Research"
+    url: /research/
+  - title: "Collaborate"
+    url: /collaborate/
