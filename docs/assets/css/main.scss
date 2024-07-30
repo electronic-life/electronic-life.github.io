@@ -1,0 +1,19 @@
+---
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'neon' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+.page__lead {
+  font-size: 1em;
+}
+
+.page__title {
+  color: white;
+  font-size: 3em;
+  text-shadow: 
+      -0.1em 0 black, 
+      0 0.1em black,
+      0.1em 0 black,
+      0 -0.1em black !important;
+}
