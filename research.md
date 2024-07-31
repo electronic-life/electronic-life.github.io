@@ -1,20 +1,30 @@
 ---
-layout: default
-title: Research
-permalink: /research/
+layout: splash
+title: "Research"
+header:
+  overlay_color: "#000000"
+excerpt: "Our work is underpinned by a commitment to innovation and open research. We critically explore the latest developments in AI and experiment with new techniques and applications. Our aim is to create new, speculative configurations and uses of AI, as well as to enable opportunities for public engagement and learning.  We take on projects that push us in new directions, as a means to provide value and opportunities for our collaborators and their wider constituencies. 
+We publish our findings and associated code in support of open dialogue."
+
 includes:
   - main.css
+feature_row:
+  - image_path: /assets/aud.webp
+    image_caption: ""
+    alt: ""
+    title: "Launching Electronic Life"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "https://sav.phd/posts/electronic_life/"
+  - image_path: /assets/aud.webp
+    alt: ""
+    title: "Rage Machine"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "https://sav.phd/posts/outsmarted/"
+  - image_path: /assets/aud.webp
+    title: "PSK / Soundscape"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<!-- {% include feature_row id="intro" type="center" %} -->
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+{% include feature_row %}

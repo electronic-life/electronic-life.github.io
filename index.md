@@ -9,9 +9,8 @@ header:
 #   overlay_color: "#000"
   overlay_filter: "0.2"
   overlay_image: /assets/aud.webp
-excerpt: "We are a research studio operating collaboratively through ‘rigorous creativity’ to advance AI applications. Working with partners, we support public programming and audience experiences, build AI installations, and provide critical spaces for learning and the creative enquiry of technology.  "
+excerpt: "Electronic Life is a research studio operating collaborative through ‘rigorous creativity’ operating to advance AI Applications. Working with partners in the creative and education sectors, we support public programming and audience experiences, build AI installations, and provide critical spaces for learning and the creative enquiry of technology. "
 # css
 includes:
   - main.css
 ---
-
