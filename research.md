@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "Research"
+permalink: /research/
 header:
   overlay_color: "#000000"
 excerpt: "Our work is underpinned by a commitment to innovation and open research. We critically explore the latest developments in AI and experiment with new techniques and applications. Our aim is to create new, speculative configurations and uses of AI, as well as to enable opportunities for public engagement and learning.  We take on projects that push us in new directions, as a means to provide value and opportunities for our collaborators and their wider constituencies. 
