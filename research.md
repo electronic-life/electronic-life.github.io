@@ -9,6 +9,7 @@ We publish our findings and associated code in support of open dialogue."
 
 includes:
   - main.css
+
 feature_row:
   - image_path: /assets/aud.webp
     image_caption: ""
@@ -24,6 +25,9 @@ feature_row:
   - image_path: /assets/aud.webp
     title: "PSK / Soundscape"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/aud.webp
+    title: "AI & Social Practice"
+    excerpt: "_Learning the machine._"
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
