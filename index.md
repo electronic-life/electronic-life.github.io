@@ -15,5 +15,20 @@ includes:
   - main.css
 ---
 
-# Values
+<span id="names"></span>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const names = ['S. Manghani', 'E. D\'Souza', 'T. Savage'];
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        const shuffledNames = shuffleArray([...names]);
+        const namesElement = document.getElementById('names');
+        namesElement.innerHTML = shuffledNames.map(name => `${name}`).join(', ');
+    });
+</script>
 
