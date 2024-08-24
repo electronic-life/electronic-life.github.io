@@ -13,7 +13,19 @@ excerpt: "Electronic Life is a research studio operating collaboratively through
 # css
 includes:
   - main.css
+
+feature_row:
+  - title: "Value One"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - title: "Value Two"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - title: "Value Three"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
+
+<!-- {% include feature_row id="intro" type="center" %} -->
+
+{% include feature_row %}
 
 <span id="names"></span>
 <script>
