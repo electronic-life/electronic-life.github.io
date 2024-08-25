@@ -13,12 +13,15 @@ feature_row:
     - title: "Education"
       excerpt: "This is some sample content that goes here with **Markdown** formatting."
       url: "/education/"
+      image_path: /assets/pop.gif
     - title: "Projects"
       excerpt: "This is some sample content that goes here with **Markdown** formatting."
       url: "/projects/"
+      image_path: /assets/aud.webp
     - title: "Speculations"
       excerpt: "This is some sample content that goes here with **Markdown** formatting."
       url: "/speculations/"
+      image_path: /assets/recording.mp4
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
