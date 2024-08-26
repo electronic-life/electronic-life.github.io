@@ -2,7 +2,7 @@
 ---
 
 $background-color: black;
-$link-color: gold;
+$link-color: #f6f6f6;
 $body-color: white;
 $intro-transition  : none;
 $global-transition : none;
@@ -59,6 +59,7 @@ margin: 0 auto;
 .page__hero--overlay{
   margin-bottom: 10px;
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 #names-link:hover {
   text-decoration: underline;

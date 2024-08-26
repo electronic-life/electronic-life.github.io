@@ -1,13 +1,14 @@
 ---
 layout: splash
 title: Collaborate
-excerpt: Contact Us
 header:
   overlay_color: "#000"
 permalink: /collaborate/
 includes:
   - main.css
 ---
+
+We believe in human-AI collaboration, but we need humans! If you are interested in collaborating with the studio, please get in touch. We are always looking for new partners and collaborators to work with us on our projects.
 
 
 <form action="https://formspree.io/f/xwpepgqv" method="POST">
