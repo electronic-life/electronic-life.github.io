@@ -1,14 +1,18 @@
 ---
 title: "Automatic Art & A Post-Knowledge Economy"
 date: "2024-08-25"
+
 categories:
   - speculations
+defaults:
+  - scope:
+      type: speculations
 layout: single
 includes:
   - main.css
 ---
 
-![OpenAI’s DALLE-2 image diffusion model: Extending Diego Velázquez’s Las Meninas (1656)](/speculations/automatic_art_assets/automatic_art_1.webp)
+![OpenAI’s DALLE-2 image diffusion model: Extending Diego Velázquez’s Las Meninas (1656)](/assets/automatic_art_1.webp){:.centered}
 
 _Digital technology tilts towards an economy of abundance not scarcity. And, with significant new developments in AI technology (notably large language and image diffusion models), we are_ potentially _witnessing a shift not only to a new economy of knowledge, but one in which knowledge is itself altered._
 
@@ -29,22 +33,22 @@ Importantly, two key factors will allow for more widespread, ‘off-the-shelf’
 **Automatic Art**
 
 
-![](/speculations/automatic_art_assets/automatic_art_2.webp)
+![](/assets/automatic_art_2.webp){:.centered}
 *Figure 1: Images rendered by DALL-E 2, based upon the text entry ‘portrait of chess player, pencil drawing’*
 
 Figures 1 and 2 give a demonstration of image generation with DALL-E 2. In each case the rendering took less than 15 seconds. Figure 1 shows the result of the simple text prompt ‘portrait of chess player, pencil drawing’.
 
-![](/speculations/automatic_art_assets/automatic_art_3.webp)
+![](/assets/automatic_art_3.webp){:.centered}
 *Figure 2: Images rendered by DALL-E 2, based upon the text entry ‘portrait of Go player, pencil drawing’*
 
 Figure 2 shows the result of the prompt ‘portrait of Go player, pencil drawing’. In both cases, the reference to ‘pencil drawing’ prompts for a specific medium. A wide range of terms can be applied in this way to help narrow down the type of image required. It is notable that in the case of chess, the reference to ‘player’ seems to betray a gender bias with all results showing men. However, the quality of composition in each case is striking. The chess board itself is only implied, which focuses attention upon the ‘portrait’ of the players, who each look poised and thoughtful. We can read intensity and drama in these images. In the case of Go, one woman is represented, and the players all appear of Asian descent, which no doubt reflects the popularity of Go in Asian countries (a whole study can be made of these biases, which indeed is vital work going forward). Similarly, with the Go players, we see studied portraits, with a real sense of a game underway. It is important to remind of the fact that these images are completely new. They are _not_ direct copies or even adaptions of existing images.
 
-![](/speculations/automatic_art_assets/automatic_art_4.webp)
+![](/assets/automatic_art_4.webp){:.centered}
 *Figure 3: Chess player image, shown here (far right) to have been edited, keeping to the same style. Figure 4: Go player image, shown here (bottom) to have been extended both to the left and right of the original, keeping to the same style.*
 
 Figure 3 and 4 show secondary processes, where, for example, elements of a generated image can be erased to then prompt further adjustment. Figure 3 shows how the chess pieces in the original image have been seamlessly edited out; such rendering is very swift and involves no image editing skills on behalf of the operator. 
 
-![](/speculations/automatic_art_assets/automatic_art_5.webp)
+![](/assets//automatic_art_5.webp){:.centered}
 *Figure 4 shows a more recently added technique to prompt extensions to the original image. In this case, the Go board is extended to the right, and on the left, the woman’s elbow is draw in.*
 
 Despite the infancy of the technology, its impact is already evident. In a promotional video for the Google Pixel 6 Pro, production designer Hannah Beachler (working on _Black Panther 2_), talks through her creative process, which, involves building up huge collections of images for moods, tones and storytelling:
