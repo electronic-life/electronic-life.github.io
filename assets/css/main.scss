@@ -11,6 +11,11 @@ $footer-background-color: black;
 $footer-text-color: white;
 
 
+a[class="btn btn--light-outline btn--large"]{
+  padding: 10px;
+  border-radius: 0px;
+}
+
 // $sans-serif : 'main_font';
 
 // @font-face {
@@ -58,7 +63,8 @@ margin: 0 auto;
 
 .page__hero--overlay{
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  // padding-bottom: 20px;
+  height: 100vh;
   padding-top: 20px;
 }
 #names-link:hover {

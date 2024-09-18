@@ -24,3 +24,27 @@ feature_row:
 
 {% include feature_row %}
 
+
+<span style="font-size: 0.75em; color: grey; text-align: center">
+**Rigorous Creativity** /ˈrɪɡərəs kriːˈeɪtɪvɪti/ (noun): _Disciplined application of imagination and innovation, blending strict analytical methods with creative making to produce solutions that are both original and well-founded; balancing of analytical rigor with creative exploration, ensuring inventive ideas and applications grounded in thorough research, critical assessment, and practical feasibility._
+<br>
+<a href="/about/" id="names-link" style="color: white; text-decoration: none;">
+  <span id="names"></span>
+</a>
+</span>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const names = ['S. Manghani', 'E. D\'Souza', 'T. Savage'];
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        const shuffledNames = shuffleArray([...names]);
+        const namesElement = document.getElementById('names');
+        namesElement.innerHTML = shuffledNames.map(name => `${name}`).join(', ');
+    });
+</script>
+

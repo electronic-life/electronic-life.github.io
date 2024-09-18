@@ -23,6 +23,9 @@ feature_row:
       image_path: /assets/recording.mp4
 ---
 
+<!-- make background white here -->
+
+
 <!-- {% include feature_row id="intro" type="center" %} -->
 
-{% include feature_row %}
+<!-- {% include feature_row %} -->
