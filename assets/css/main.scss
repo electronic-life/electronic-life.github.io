@@ -70,6 +70,34 @@ margin: 0 auto;
   padding-top: 20px;
 }
 
+#canvas-container { position: relative; width: 100vw; height: 100vh; }
+canvas { display: block; }
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px;
+    transition: opacity 0.3s;
+    width: 200px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow text */
+}
+.text-overlay h3 { 
+    margin: 0 0 10px 0;
+    font-size: 16px; /* Adjust font size */
+}
+.text-overlay p { 
+    margin: 0;
+    font-size: 12px; /* Adjust font size */
+    line-height: 1.2; /* Adjust line height */
+}
+
 #names-link:hover {
   text-decoration: underline;
 }
