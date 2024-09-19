@@ -61,15 +61,15 @@ max-width: 700px;
 margin: 0 auto;
 }
 
+// if the page is 
 .page__hero--overlay{
   margin-bottom: 10px;
-  // padding-bottom: 20px;
-  // align to left 
   text-align: left;
   background-position: left center;
-  height: 100vh;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
+
 #names-link:hover {
   text-decoration: underline;
 }

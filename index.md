@@ -11,9 +11,5 @@ header:
 excerpt: "Electronic Life is a research studio operating collaboratively through **rigorous creativity** to advance AI applications."
 includes:
   - main.css
-  - assets/index_css.css
+custom_css: index-style
 ---
-
-<video autoplay muted loop id="myVideo">
-  <source src="/assets/aud.webm" type="video/webm">
-</video>
