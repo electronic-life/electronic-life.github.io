@@ -1,7 +1,8 @@
 main:
+  - title: "Home"
+    url: /
+    image: "/assets/arrow.png"
   - title: "Studio"
     url: /studio/
   - title: "Research"
     url: /research/
-  - title: "Collaborate"
-    url: /collaborate/

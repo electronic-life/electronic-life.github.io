@@ -5,3 +5,7 @@
     height: 100vh;
     padding-top: 20px;
   }
+
+  .navbar, #site-nav, .masthead {
+    display: none !important;
+  }
