@@ -4,10 +4,10 @@ title: ""
 permalink: /research/
 header:
   overlay_color: "#000"
-  overlay_filter: "0.6"
-  overlay_image: /assets/aud.webp
 excerpt: "
 <img src='/assets/research.png' alt='Research' class='title-image'>
+
+<br>
 
 Our work is underpinned by a commitment to innovation and open research. We critically and creatively explore the latest developments in AI and experiment with new techniques and applications. Our aim is to create new, speculative configurations and uses of AI, as well as to enable opportunities for public engagement and learning.
 

@@ -5,8 +5,6 @@ permalink: /about/
 title: ""
 header:
   overlay_color: "#000"
-  overlay_filter: "0.6"
-  overlay_image: /assets/aud.webp
 excerpt: "
 
 <img src='/assets/about.png' alt='About Us' class='title-image'>
