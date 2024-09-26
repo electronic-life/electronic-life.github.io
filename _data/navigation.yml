@@ -1,7 +1,6 @@
 main:
-  - title: "Home"
-    url: /
-    image: "/assets/arrow.png"
+  - title: "About"
+    url: /about/
   - title: "Studio"
     url: /studio/
   - title: "Research"

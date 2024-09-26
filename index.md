@@ -24,24 +24,41 @@ Electronic Life is a research studio operating collaboratively through **rigorou
 
   .bottom-images {
     position: relative;
-    bottom: 10px;
-    display: flex;
+    display: inline-flex;
+    top: 30px;
     gap: 10px;
   }
+
+.bottom-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
   .bottom-images img {
-    height: 75px;
+    height: 50px;
     width: auto;
   }
 </style>
+<br>
 <span class='bottom-images'>
   <a href='/research/'>
     <img src='/assets/research.png' alt='Research'>
   </a>
-  <img src='/assets/arrow.png' alt='Arrow'>
+  <a>
+    <img src='/assets/arrow.png' alt='Arrow'>
+  </a>
   <a href='/studio/'>
     <img src='/assets/studio.png' alt='Studio'>
   </a>
 </span>
+
+<span class='bottom-text'>
+↓ Contact Us ↓
+</span>
+
 "
 includes:
   - main.css
