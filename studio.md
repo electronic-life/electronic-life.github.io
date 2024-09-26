@@ -6,6 +6,8 @@ subtitle: "Tools, Projects, Consultancy"
 permalink: /studio/
 header:
   overlay_color: "#000"
+  overlay_filter: "0.7"
+  overlay_image: /assets/background.png
   # actions:
   #   - label: "About Us"
   #     url: "/about/"
