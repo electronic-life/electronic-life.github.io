@@ -5,12 +5,13 @@ layout: splash
 
 header:
   overlay_color: "#000"
-  overlay_image: /assets/tate_background.gif
+  overlay_image: /assets/tate_background.mp4
 excerpt: "
+
 
 <img src='/assets/electronic_life.png' alt='Electronic Life' class='title-image'>
 
-Electronic Life is a research studio operating collaboratively through **rigorous creativity** to advance AI applications.
+Electronic Life is a research studio operating collaboratively through <strong>rigorous creativity</strong> to advance AI applications.
 
 <style>
   .title-image {
