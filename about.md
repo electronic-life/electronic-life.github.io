@@ -36,6 +36,17 @@ feature_row:
 <!-- {% include feature_row id="intro" type="center" %} -->
 
 
+**Electronic Life** – devised and led by Ed D’Souza, Sunil Manghani and Tom Savage – responds to the ‘Grand Challenge’ of artificial intelligence.
+**We believe** artificial intelligence presents exciting opportunities for creativity and human endeavour, but it also raises serious challenges for the future of society. We don’t have all the answers. But we are committed to finding out more and working collaboratively to advance new positive agendas. 
+**Our Research Studio** represents a unique initiative to broaden and deepen expertise, skills and capacities as well as to provide a critical context to test and creatively challenge new developments. Key partners include The Alan Turing Institute’s AI & Arts Group; Tate; Kochi Biennale, and University of Southampton.
+**Our Mission:** to provide a forum for new, provocative ideas and creative practices, enabling open, cross-cutting debate and inquiry.
+
+<form action="https://formspree.io/f/xwpepgqv" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+</form>
+
 
 {% include feature_row %}
 
