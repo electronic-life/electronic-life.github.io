@@ -11,6 +11,8 @@ excerpt: "
 
 Our work is underpinned by a commitment to innovation and open research. We critically and creatively explore the latest developments in AI and experiment with new techniques and applications. Our aim is to create new, speculative configurations and uses of AI, as well as to enable opportunities for public engagement and learning.
 
+**We publish working papers** on an unfolding basis as our research and projects develop. Our aim is to maintain an open, inclusive approach, providing a combination of project reports, research articles, speculative texts, and resource notes.
+
 
 <style>
   .title-image {
