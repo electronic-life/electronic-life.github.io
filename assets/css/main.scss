@@ -56,10 +56,12 @@ button{
   border-radius: 1px;
 }
 
-// left align
+// form always 20px from left and at bottom
 form {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 500px;
+  left: 10px;
+  padding: 0px;
+
 }
 
 // if the page is 

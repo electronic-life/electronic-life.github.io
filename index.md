@@ -35,6 +35,12 @@ Electronic Life is a research studio operating collaboratively through **rigorou
   transform: translateX(-50%);
 }
 
+.contact-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 
   .bottom-images img {
     height: 50px;
@@ -54,9 +60,11 @@ Electronic Life is a research studio operating collaboratively through **rigorou
   </a>
 </span>
 
-<span class='bottom-text'>
+<span class='contact-text'>
 ↓ Contact Us ↓
 </span>
+
+
 
 "
 includes:
