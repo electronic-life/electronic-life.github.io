@@ -39,7 +39,6 @@ Electronic Life is a research studio operating collaboratively through <strong>r
 .contact-text {
   position: absolute;
   bottom: 20px;
-  left: 20px;
 }
 
 
@@ -61,9 +60,9 @@ Electronic Life is a research studio operating collaboratively through <strong>r
   </a>
 </span>
 
-<span class='contact-text'>
+<div class='contact-text'>
 ↓ Contact Us ↓
-</span>
+</div>
 
 
 
