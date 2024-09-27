@@ -5,7 +5,7 @@ layout: splash
 
 header:
   overlay_color: "#000"
-  overlay_image: /assets/background.gif
+  overlay_image: /assets/tate_background.gif
 excerpt: "
 
 <img src='/assets/electronic_life.png' alt='Electronic Life' class='title-image'>
