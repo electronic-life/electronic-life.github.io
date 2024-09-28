@@ -43,7 +43,7 @@ Electronic Life is a research studio operating collaboratively through <strong>r
 
 
   .bottom-images img {
-    height: 50px;
+    height: 45px;
     width: auto;
   }
 </style>
