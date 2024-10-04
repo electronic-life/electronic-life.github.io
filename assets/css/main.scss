@@ -16,6 +16,16 @@ a[class="btn btn--light-outline btn--large"]{
   border-radius: 0px;
 }
 
+a[class="btn btn--light-outline btn--large"],
+.btn--light-outline,
+.btn {
+  padding: 10px;
+  border-radius: 0 !important;
+  background-color: white !important;
+  color: black !important;
+  // drop shadow grey 2px bottom and left
+}
+
 // $sans-serif : 'main_font';
 
 // @font-face {
