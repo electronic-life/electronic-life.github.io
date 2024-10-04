@@ -35,13 +35,12 @@ feature_row:
       excerpt: "_Sunil Manghani, Tom Savage, Ed D'Souza - September 2024._"
       url: "/assets/papers/001_rage_machine.pdf"
       btn_label: "View Paper"
-      btn_class: "btn--custom-paper"
-      # image_path: /assets/pop.gif
+      btn_class: "btn--primary"
     - title: "002 - AI Mirror Stage"
       excerpt: "_Sunil Manghani - October 2024._"
       url: "/assets/papers/002_ai_mirror.pdf"
       btn_label: "View Paper"
-      btn_class: "btn--custom-paper"
+      btn_class: "btn--primary"
 ---
 
 
