@@ -50,3 +50,7 @@ feature_row:
 <!-- {% include feature_row id="intro" type="center" %} -->
 
 <!-- {% include feature_row %} -->
+
+- [001 - Rage Machine]({{ site.baseurl }}/assets/papers/001_rage_machine.pdf)
+- [002 - AI Mirror Stage (or, why not to confuse AI
+with human intelligence)]({{ site.baseurl }}/assets/papers/002_ai_mirror.pdf)
