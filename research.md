@@ -42,7 +42,7 @@ feature_row:
       btn_label: "View Paper"
       btn_class: "btn--primary"
     - title: "Learning the Machine<sup>003</sup>"
-      excerpt: "_Ed D'Souza,Sunil Manghani - October 2024._"
+      excerpt: "_Ed D'Souza, Sunil Manghani - October 2024._"
       url: "/assets/papers/003_learning_the_machine.pdf"
       btn_label: "View Paper"
       btn_class: "btn--primary"
