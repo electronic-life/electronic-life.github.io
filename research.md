@@ -27,30 +27,22 @@ Our work is underpinned by a commitment to innovation and open research. We crit
 
 "
 
+# custom_css: index-style
 includes:
   - main.css
 feature_row:
-    - title: "Education"
-      excerpt: "Our workshops, advocacy and mentoring."
-      url: "/education/"
-      image_path: /assets/pop.gif
-    - title: "Projects"
-      excerpt: "Our previous projects and programming."
-      url: "/projects/"
-      image_path: /assets/aud.webp
-    - title: "Speculations"
-      excerpt: "Our writings and reflections on AI, culture, and society."
-      url: "/speculations/"
-      image_path: /assets/recording.mp4
+    - title: "001 - Rage Machine"
+      excerpt: "_Sunil Manghani, Tom Savage, Ed D'Souza - September 2024._"
+      url: "/assets/papers/001_rage_machine.pdf"
+      btn_label: "View Paper"
+      btn_class: "btn--custom-paper"
+      # image_path: /assets/pop.gif
+    - title: "002 - AI Mirror Stage"
+      excerpt: "_Sunil Manghani - October 2024._"
+      url: "/assets/papers/002_ai_mirror.pdf"
+      btn_label: "View Paper"
+      btn_class: "btn--custom-paper"
 ---
 
-<!-- make background white here -->
 
-
-<!-- {% include feature_row id="intro" type="center" %} -->
-
-<!-- {% include feature_row %} -->
-
-- [001 - Rage Machine]({{ site.baseurl }}/assets/papers/001_rage_machine.pdf)
-- [002 - AI Mirror Stage (or, why not to confuse AI
-with human intelligence)]({{ site.baseurl }}/assets/papers/002_ai_mirror.pdf)
+{% include feature_row %}
