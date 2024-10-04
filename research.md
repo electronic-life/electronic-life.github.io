@@ -31,16 +31,22 @@ Our work is underpinned by a commitment to innovation and open research. We crit
 includes:
   - main.css
 feature_row:
-    - title: "001 - Rage Machine"
+    - title: "Rage Machine<sup>001</sup>"
       excerpt: "_Sunil Manghani, Tom Savage, Ed D'Souza - September 2024._"
       url: "/assets/papers/001_rage_machine.pdf"
       btn_label: "View Paper"
       btn_class: "btn--primary"
-    - title: "002 - AI Mirror Stage"
+    - title: "AI Mirror Stage<sup>002</sup>"
       excerpt: "_Sunil Manghani - October 2024._"
       url: "/assets/papers/002_ai_mirror.pdf"
       btn_label: "View Paper"
       btn_class: "btn--primary"
+    - title: "Learning the Machine<sup>003</sup>"
+      excerpt: "_Ed D'Souza,Sunil Manghani - October 2024._"
+      url: "/assets/papers/003_learning_the_machine.pdf"
+      btn_label: "View Paper"
+      btn_class: "btn--primary"
+
 ---
 
 
