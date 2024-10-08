@@ -5,7 +5,7 @@ layout: splash
 
 header:
   overlay_color: "#000"
-  overlay_image: /assets/tate_background.mp4
+  overlay_image: /assets/tate_background_.mp4
 excerpt: "
 
 
