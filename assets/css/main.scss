@@ -1,14 +1,53 @@
 ---
 ---
 
-$background-color: black;
-$link-color: #f6f6f6;
-$body-color: white;
+$background-color: white;
+$link-color: blue;
+$body-color: black;
 $intro-transition  : none;
 $global-transition : none;
-$muted-text-color: grey;
-$footer-background-color: black;
-$footer-text-color: white;
+$muted-text-color: black;
+$footer-background-color: white;
+$footer-text-color: black;
+$sans-serif : 'main_font';
+
+@font-face {
+  font-family: 'main_font';
+  src: url("/assets/fonts/Supreme-Variable.ttf") format('truetype');
+}
+
+.a {
+  color: black !important;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.1em;
+  height: 1.5em;
+  background-color: black;
+  margin-left: 0.5em;
+  animation: blink 1.25s step-end infinite;
+  vertical-align: middle;
+  transform: translateY(-0.45em);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 
 a[class="btn btn--light-outline btn--large"]{
@@ -22,16 +61,17 @@ a[class="btn btn--light-outline btn--large"],
   padding: 5px !important;
   border-radius: 0 !important;
   background-color: white !important;
+  border: 2px solid black !important;
   color: black !important;
   // drop shadow grey 2px bottom and left
 }
 
-// $sans-serif : 'main_font';
+// hover
+.btn:hover {
+  background-color: black !important;
+  color: white !important;
+}
 
-// @font-face {
-//   font-family: 'main_font';
-//   src: url("font.ttf") format('truetype');
-// }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -81,6 +121,7 @@ form {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
 
 #canvas-container { position: relative; width: 100vw; height: 100vh; }
 canvas { display: block; }
@@ -173,3 +214,7 @@ img.centered {
 }
 
 
+// all text colour is black 
+h1, h2, h3, h4, h5, h6, p, a, span, div {
+  color: black;
+}
