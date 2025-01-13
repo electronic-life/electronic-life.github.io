@@ -14,3 +14,9 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
+
+module.exports = {
+  rules: {
+    "padded-blocks": "off",
+  },
+};

@@ -1,3 +1,4 @@
+import ContactLink from "./contact_us";
 interface FooterProps {
     className?: string;
 }
@@ -5,8 +6,9 @@ interface FooterProps {
 
 const Footer = ({className}: FooterProps) => {
     return (
-        <footer className={`p-12 ${className}`}>
-            <p className="text-sm">© 2024 S. Manghani, E. D&aposSouza, T. Savage</p>
+        <footer className={`p-12 mb-0 ${className}`}>
+            <ContactLink className="text-m underline text-white hover:text-blue-400" />
+            <p className="text-sm mt-2 text-white">© 2024 S. Manghani, E. D’Souza, T. Savage</p>
         </footer>
     );
 }

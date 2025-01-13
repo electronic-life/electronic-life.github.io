@@ -23,12 +23,12 @@ const Grid = () => {
   ];
 
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+    <div className="bg-opacity-0 container mx-auto">
+      <div className="bg-opacity-0 grid grid-cols-1 lg:grid-cols-4 ml-1 mr-1">
         {items.map((item) => (
           <div
             key={item.id}
-            className="bg-white p-4 border border-black"
+            className="bg-black p-4 mx-2 my-2 border border-white text-white"
           >
             {/* <h2 className="text-xl font-bold mb-4">{item.title}</h2> */}
             <ContentRenderer html={item.content} />

@@ -8,10 +8,11 @@ type TitleProps = {
 
 const Title = ({text,className}: TitleProps) => {
   return (
-    <h1 className={`text-3xl font-bold ${className}`}>
+    // just center this
+    <h1 className={`text-3xl font-bold text-white ${className}`}>
       {text}
-      <span className="inline-block w-0.5 h-9 bg-black ml-3 translate-y-1.5 animate-blink">
-      </span>
+      {/* <span className="inline-block w-0.5 h-9 bg-white ml-3 translate-y-1.5 animate-blink"> */}
+      {/* </span> */}
     </h1>
   );
 }
