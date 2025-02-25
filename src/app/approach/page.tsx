@@ -1,43 +1,23 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { createPagePath,createAssetPath } from '@/utils/path';
+import { createPagePath } from '../../utils/path';
+import Header from '../../components/header';
+import Footer from '../../components/footer';
+import { useEffect } from 'react';
 
-interface Paper {
-  title: string;
-  description: string;
-  authors: string[];
-  year: number;
-  pdfUrl: string;
-}
-const papers: Paper[] = [
-  {
-    title: "Rage Machine",
-    description: "An AI entity that is able to hold free and open conversation developed in dialogue with Linsey Young, curator of Women in Revolt! Art and Activism in the UK 1970-1990, and presented publicly as part of the exhibition's wider programming.",
-    authors: ["Sunil Manghani", "Ed D'Souza", "Tom Savage"],
-    year: 2024,
-    pdfUrl: "/pdfs/001_rage_machine.pdf"
-  },
-  {
-    title: "AI Mirror Stage",
-    description: "Please be gentle. We are just taking our first steps with Electronic Life. This plea seemed to galvanise the crowd, drawing us all into a common purpose: An unwritten contract, allowing us all collectively to give 'life' to something.",
-    authors: ["Sunil Manghani"],
-    year: 2024,
-    pdfUrl: "/pdfs/002_ai_mirror.pdf"
-  },
-  {
-    title: "Learning the Machine",
-    description: "Learning the machine means first accessing new technologies. It means a free-form approach to social and experiential learning.",
-    authors: ["Sunil Manghani", "Ed D'Souza"],
-    year: 2024,
-    pdfUrl: "/pdfs/003_learning_the_machine.pdf"
-  }
-];
 
-export default function PapersPage() {
+export default function ApproachPage() {
   const router = useRouter();
+  
+  useEffect(() => {
+    // When mounted, update history state to include scroll position
+    window.history.replaceState(
+      { scrollToBottom: true },
+      '',
+      window.location.href
+    );
+  }, []);
   
   const handleHeaderClick = () => {
     sessionStorage.setItem('lastScrollState', 'full');
@@ -45,56 +25,25 @@ export default function PapersPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black flex flex-col">
       <div 
-        className="cursor-pointer" 
+        className="cursor-pointer flex-grow" 
         onClick={handleHeaderClick}
       >
-        <Header text_colour='black' />
-      </div>
-      <main className="container mx-auto px-4 py-8">
-        <div className="space-y-3">
-          <div className="grid gap-6">
-            {papers.map((paper, index) => (
-              <div 
-                key={index}
-                className="bg-white/80 border border-white/20 p-6 hover:border-white/40 transition-all"
-              >
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h2 className="text-2xl font-semibold mb-2">{paper.title}</h2>
-                    <p className="text-black/70 mb-2">{paper.description}</p>
-                    <p className="text-black/60 text-sm">
-                      {paper.authors.join(", ")} • {paper.year}
-                    </p>
-                  </div>
-                  <a
-                    href={paper.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded transition-all text-black/90 hover:text-black"
-                  >
-                    <svg 
-                      className="w-5 h-5" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={2} 
-                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
-                      />
-                    </svg>
-                    PDF
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+        <Header text_colour='black' breadcrumb='| Approach' />
+        <div className="bg-white/80 border border-white/20 p-0 ml-10 mt-10 mr-10">
+          <p className="text-black/60 text-m leading-relaxed">
+            <i>
+              Rigorous Creativity /ˈrɪɡərəs kriːˈeɪtɪvɪti/: Disciplined application of imagination and innovation, blending strict analytical methods with creative making to produce solutions that are both original and well-founded; balancing of analytical rigor with creative exploration, ensuring inventive ideas and applications grounded in thorough research, critical assessment, and practical feasibility. 
+            </i>
+          </p>
+          <br></br>
+          <p className="text-black/90 text-l text-leading-relaxed">
+            As leaders in the field, we support a range of partners with critical and creative approaches for the development and application of AI tools, techniques and practices. Taking a makerly approach combined with high-level technical and conceptual expertise, we pursue rigorous creativity, working alongside key partners and communities for the social good.
+            Our 'AI Studio' builds around people and situations - offering an innovative, adaptive constellation of tools, techniques, and methodologies, underpinned by long-term experience in social and creative practices. 
+          </p>
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   );

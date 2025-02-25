@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { createPagePath,createAssetPath } from '@/utils/path';
+import { useEffect } from 'react';
 
 interface Paper {
   title: string;
@@ -39,6 +40,15 @@ const papers: Paper[] = [
 export default function PapersPage() {
   const router = useRouter();
   
+  useEffect(() => {
+    // When mounted, update history state to include scroll position
+    window.history.replaceState(
+      { scrollToBottom: true },
+      '',
+      window.location.href
+    );
+  }, []);
+  
   const handleHeaderClick = () => {
     sessionStorage.setItem('lastScrollState', 'full');
     router.push(createPagePath('/'));
@@ -50,15 +60,16 @@ export default function PapersPage() {
         className="cursor-pointer" 
         onClick={handleHeaderClick}
       >
-        <Header text_colour='black' />
+        <Header text_colour='black' breadcrumb=' | Papers'/>
       </div>
-      <main className="container mx-auto px-4 py-8">
-        <div className="space-y-3">
-          <div className="grid gap-6">
+      <main className="container mx-auto px-10 py-10">
+        <div className="space-y-4">
+          <div className="grid gap-4">
             {papers.map((paper, index) => (
               <div 
                 key={index}
-                className="bg-white/80 border border-white/20 p-6 hover:border-white/40 transition-all"
+                // rounded border
+                className="bg-blue border border-black/10 p-4 hover:border-black/40 transition-all"
               >
                 <div className="flex justify-between items-start">
                   <div>
@@ -72,7 +83,7 @@ export default function PapersPage() {
                     href={paper.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded transition-all text-black/90 hover:text-black"
+                    className="flex items-center gap-4 bg-black/10 hover:bg-black/20 px-4 py-2 rounded transition-all text-black/90 hover:text-black"
                   >
                     <svg 
                       className="w-5 h-5" 
@@ -95,7 +106,7 @@ export default function PapersPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
