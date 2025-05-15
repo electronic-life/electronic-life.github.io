@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers - Electronic Life Collective</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'MyCustomFontName'; /* This is your locally hosted font */
+            src: url('fonts/Supreme-Variable.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Apply the custom font to the body */
+        body {
+            font-family: 'MyCustomFontName', sans-serif; /* Uses your custom font, falls back to a generic sans-serif */
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <header class="bg-white sticky top-0 z-10 border-b border-gray-400">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="logo.png" alt="Electronic Life - Logo" class="h-8 sm:h-10">
+                    <span class="text-sm sm:text-2xl font-semibold whitespace-nowrap text-black">Collective</span>
+                </a>
+
+                <nav class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-150 hover:underline">Home</a>
+                    <a href="papers.html" class="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-150 hover:underline">Papers</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-black hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 p-2">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-8 6h8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-300">
+            <a href="index.html" class="block text-black hover:bg-gray-100 hover:text-gray-700 px-4 py-3 text-sm font-medium transition-colors duration-150">Home</a>
+            <a href="papers.html" class="block text-black hover:bg-gray-100 hover:text-gray-700 px-4 py-3 text-sm font-medium transition-colors duration-150">Papers</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <section id="papers-list" class="bg-white p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black mb-6">Papers</h2>
+            <div class="space-y-4">
+                <div class="border-b border-gray-400 p-4">
+                    <h3 class="text-lg font-semibold text-black mb-1">001 - Rage Machine</h3>
+                    <a href="pdfs/001_rage_machine.pdf" target="_blank" class="text-sm text-black hover:underline hover:text-gray-600 transition-colors duration-150">View PDF &rarr;</a>
+                </div>
+
+                <div class="border-b border-gray-400 p-4">
+                    <h3 class="text-lg font-semibold text-black mb-1">002 - AI Mirror Stage</h3>
+                    <a href="pdfs/002_ai_mirror.pdf" target="_blank" class="text-sm text-black hover:underline hover:text-gray-600 transition-colors duration-150">View PDF &rarr;</a>
+                </div>
+
+                <div class="border-b border-gray-400 p-4">
+                    <h3 class="text-lg font-semibold text-black mb-1">003 - Learning the Machine</h3>
+                    <a href="pdfs/003_learning_the_machine.pdf" target="_blank" class="text-sm text-black hover:underline hover:text-gray-600 transition-colors duration-150">View PDF &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white text-gray-700 py-8 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; <span id="current-year"></span> Electronic Life. All rights reserved.</p> 
+            <p class="text-sm mt-1">
+                Contact: <a href="mailto:contact@electroniclife.ai" class="hover:text-gray-300 underline">contact@electroniclife.ai</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle (consistent with simplified homepage)
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript to set the current year in the footer (consistent with simplified homepage)
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

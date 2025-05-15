@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Life: Art Collective</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'MyCustomFontName'; /* This is your locally hosted font */
+            src: url('fonts/Supreme-Variable.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Apply the custom font to the body */
+        body {
+            font-family: 'MyCustomFontName', sans-serif; /* Uses your custom font, falls back to a generic sans-serif */
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <header class="bg-white sticky top-0 z-10 border-b border-gray-400">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="logo.png" alt="Electronic Life - Logo" class="h-8 sm:h-10">
+                    <span class="text-sm sm:text-2xl font-semibold whitespace-nowrap text-black">Collective</span>
+                </a>
+
+                <nav class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-150 hover:underline">Home</a>
+                    <a href="papers.html" class="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-150 hover:underline">Papers</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-black hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 p-2">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-8 6h8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-300">
+            <a href="index.html" class="block text-black hover:bg-gray-100 hover:text-gray-700 px-4 py-3 text-sm font-medium transition-colors duration-150">Home</a>
+            <a href="papers.html" class="block text-black hover:bg-gray-100 hover:text-gray-700 px-4 py-3 text-sm font-medium transition-colors duration-150">Papers</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section id="about" class="bg-white p-6 sm:p-8 mb-12">
+            <div class="space-y-4 text-gray-800 leading-relaxed">
+                <p>
+                    Electronic Life applies artificial intelligence, critical thought, and creative execution. Our foundational principle is 'Rigorous Creativity': a framework demanding the disciplined application of analytical methods in tandem with generative creative practice. This ensures all outputs are original, critically assessed, and operationally sound.
+                </p>
+                <p>
+The collective was established by three founders: Sunil Manghani, Ed D'Souza, and Tom Savage, who together guide its core trajectory. Manghani and D'Souza provide ongoing critical and theoretical framing through their established academic research and deep engagement with advanced AI practices. Savage, also a founder, now focuses his contributions on the collective's creative works.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white text-gray-700 py-8 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; <span id="current-year"></span> Electronic Life. All rights reserved.</p>
+            <p class="text-sm mt-1">
+                Contact: <a href="mailto:contact@electroniclife.ai" class="hover:text-gray-300 underline">contact@electroniclife.ai</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript to set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

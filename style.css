@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'MyCustomFontName'; /* This is the name you'll use to refer to the font */
+    src: url('fonts/Supreme-Variable.ttf') format('truetype'); /* Path to your font file and its format */
+    /* You can add more src lines for different font formats for broader browser compatibility if needed */
+    /* e.g., url('fonts/MyCustomFont.woff') format('woff'); */
+    font-weight: normal; /* Or specify weight if the file is for a specific weight */
+    font-style: normal;  /* Or specify style if the file is for a specific style */
+}
+
+body {
+    font-family: 'MyCustomFontName', sans-serif; /* Use your custom font, with sans-serif as a fallback */
+    margin: 20px;
+}
+
+#logo {
+    max-height: 30px; /* Adjust as needed */
+    width: auto;      /* Maintain aspect ratio */
+    display: block;   /* Helps with layout, can prevent extra space below */
+}
+
+header, nav, section, footer { margin-bottom: 20px; }
+nav a { margin-right: 15px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
